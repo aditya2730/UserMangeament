@@ -13,4 +13,9 @@ export class authService {
   getToken() {
     return localStorage.getItem('token')?.toString();
   }
+
+  removeToken(): void {
+    return localStorage.removeItem('token');
+  }
 }
+

@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { UserInformation } from '../models/user-model';
 import { UserService } from '../Services/user.service';
+import { authService } from '../Services/auth.service';
 
 @Component({
   selector: 'user',
@@ -25,7 +26,7 @@ export class UserComponent implements OnInit, OnChanges {
   displayImage: boolean = true;
   p: number = 1;
   
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService, private auth:authService) {
     this.userInfo = {} as UserInformation;
   }
 
@@ -42,5 +43,9 @@ export class UserComponent implements OnInit, OnChanges {
   }
   ngOnInit(): void {
     this.getUsers();
+
+    window.onbeforeunload = () => {
+        this.auth.removeToken()
+    }
   }
 }
