@@ -1,3 +1,16 @@
-.container{
-    box-sizing: border-box;
+.p-3.m-3{
+    border: 2px inset;
+    width: 400px;
+    height: 500px;
+    margin-left: 300px ;
+   
 }
+
+.btn.btn-primary{
+    margin-left: 100px;
+}
+
+.sign-in{
+    margin-left: 100px;
+}
+
