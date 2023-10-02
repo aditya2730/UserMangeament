@@ -8,7 +8,7 @@
         <div class="form-group my-4">
             <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email" />
             <div *ngIf="loginForm.get('email')!.hasError('required') && loginForm.get('email')!.touched" class="error-message" style="color: red;">
-                warning-Email is required.
+                Email is required.
               </div>
               <div *ngIf="loginForm.get('email')!.hasError('pattern') && loginForm.get('email')!.touched" class="error-message" style="color: red;">
                 Invalid email format.
