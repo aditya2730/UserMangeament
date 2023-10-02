@@ -2,7 +2,8 @@
     border: 2px inset;
     width: 400px;
     height: 500px;
-    margin-left: 300px ;
+    position: absolute;
+    left:500px
    
 }
 
@@ -10,7 +11,5 @@
     margin-left: 100px;
 }
 
-.sign-in{
-    margin-left: 100px;
-}
+
 
