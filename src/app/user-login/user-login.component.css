@@ -1,14 +1,15 @@
 .p-3.m-3{
     border: 2px inset;
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    left:500px
+    width: 350px;
+    height: 450px;
+    position:absolute;
+    left:540px
    
 }
 
 .btn.btn-primary{
-    margin-left: 100px;
+    margin-left: 65px;
+    width: 100px;
 }
 
 
