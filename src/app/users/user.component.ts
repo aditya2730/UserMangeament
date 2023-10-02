@@ -29,10 +29,6 @@ export class UserComponent implements OnInit, OnChanges {
     this.userInfo = {} as UserInformation;
   }
 
-  toggleImage(): void {
-    this.displayImage = !this.displayImage;
-  }
-
   ngOnChanges(changes: SimpleChanges): void {}
   getUsers() {
     this.userService.getUsers(this.p).subscribe((response: any) => {

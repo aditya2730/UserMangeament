@@ -2,14 +2,6 @@
 <table class="table container text-center">
   <thead>
     <tr>
-      <th>
-        <button class="btn btn-primary" (click)="toggleImage()">
-          {{ displayImage ? "Hide" : "Show" }} Image
-        </button>
-
-      </th>
-    </tr>
-    <tr>
       <th>Avtar</th>
       <th>FirstName</th>
       <th>LastName</th>
@@ -20,7 +12,7 @@
 
     <tr *ngFor="let user of users| paginate: { itemsPerPage: 6, currentPage: p, totalItems: total }">
       <td>
-        <img class="border border-danger rounded-circle" *ngIf="displayImage" [src]="user.avatar" alt="" />
+        <img class="border border-danger rounded-circle" [src]="user.avatar" />
       </td>
       <td>{{ user.first_name }}</td>
       <td>{{ user.last_name }}</td>
